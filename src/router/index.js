@@ -43,6 +43,11 @@ const routes = [
 			component: adminList,
 			meta: ['数据管理', '管理员列表'],
 		},
+		{
+			path: '/pressList',
+			component: adminList,
+			meta: ['数据管理', '出版社'],
+		},
 		// {
 		// 	path: '/visitor',
 		// 	component: visitor,

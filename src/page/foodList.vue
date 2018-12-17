@@ -33,7 +33,7 @@
         <el-table-column label="商城价" prop="promotionPrice"></el-table-column>
         <el-table-column label="市场价" prop="marketRprice"></el-table-column>
         <el-table-column label="商品id" prop="_id"></el-table-column>
-        <el-table-column label="出版社id" prop="pressId"></el-table-column>
+        <el-table-column label="出版社id" prop="pressId._id"></el-table-column>
         <el-table-column label="商品类型" prop="category"></el-table-column>
         <el-table-column label="上架状态(1上架)" prop="status"></el-table-column>
         <el-table-column label="操作" width="160">

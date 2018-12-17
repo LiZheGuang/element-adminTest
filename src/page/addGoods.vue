@@ -332,10 +332,23 @@ export default {
         "摆渡者",
         "明日之子",
         "七龙珠"
-	  ];
+    ];
+    
+    let mathData = [
+      {title:"三体",imageUrl:"https://images-cn.ssl-images-amazon.com/images/I/81%2BuDkMM-ML.jpg"},
+      {title:"三国演义",imageUrl:"https://images-cn.ssl-images-amazon.com/images/I/816RU9jAIZL.jpg"},
+      {title:"水浒",imageUrl:"https://images-cn.ssl-images-amazon.com/images/I/51QTyytmXsL._AA218_.jpg"},
+      {title:"斗破苍穹",imageUrl:"https://images-cn.ssl-images-amazon.com/images/I/61sYz0Lhl9L._AA218_.jpg"},
+      {title:"摆渡者",imageUrl:"https://images-cn.ssl-images-amazon.com/images/I/51SFdITa71L._AA218_.jpg"},
+      {title:"明日之子",imageUrl:"https://images-cn.ssl-images-amazon.com/images/I/41C7AViPzoL._AA218_.jpg"},
+      {title:"七龙珠",imageUrl:"https://images-cn.ssl-images-amazon.com/images/I/510cetlSMZL._AA218_.jpg"}
+
+    ]
+
 	  let keyNumber = this.sum(0,title.length -1)
 
-	  let mathTitle = title[keyNumber]
+    let mathTitle = mathData[keyNumber].title
+    let imageUrl = mathData[keyNumber].imageUrl
 
       let data = {
         category: keyNumber % 2  ? 'video' :'book',
@@ -345,7 +358,7 @@ export default {
         promotionPrice: 5500,
         promotionEndTime: "1544177129002",
         picture: [
-          "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1544782013&di=0fc4b5dbb2d7a9996997c8da97cb9852&imgtype=jpg&er=1&src=http%3A%2F%2Fimage13.m1905.cn%2Fuploadfile%2F2018%2F0426%2F20180426035739175560.jpg"
+          imageUrl
         ],
         pressId: "5c10b0f145253d6299773068",
         skuData: {
@@ -354,8 +367,7 @@ export default {
           version: "亚马逊精选版",
           picture: [
             {
-              url:
-                "http://image.baidu.com/search/detail?ct=503316480&z=0&ipn=d&word=%E4%B8%89%E4%BD%93&step_word=&hs=0&pn=12&di=91572017350&rn=1&tn=baiduimagedetail&is=0%2C0&istype=0&ie=utf-8&oe=utf-8&in=&cl=2&lm=-1&st=undefined&cs=777645829%2C1873139044&os=2373354084%2C1656594747&simid=0%2C0&adpicid=0&lpn=0&ln=1805&fr=&fmq=1544512931149_R&fm=&ic=undefined&s=undefined&hd=undefined&latest=undefined&copyright=undefined&se=&sme=&tab=0&width=&height=&face=undefined&ist=&jit=&cg=&oriquery=&objurl=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20171005%2Ff7073fce3f454b44a1376aa4310b7dff.jpeg&gsm=3c&rpstart=0&rpnum=0&tabname=&islist=&querylist=&selected_tags=",
+              url:imageUrl,
               urlTitle: "淘气包马小跳"
             }
           ]
